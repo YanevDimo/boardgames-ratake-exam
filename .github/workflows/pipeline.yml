@@ -24,6 +24,7 @@ jobs:
         cache: 'npm'
     - name: Intall project dependencies
       run: npm install
-    
     - name: Run unit tests for the application
       run: npm run test:unit
+    # - name: Display username
+    #   run: echo "YanevDimo"
