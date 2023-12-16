@@ -1,7 +1,7 @@
 const { test, expect } = require('@playwright/test');
 
 test('Check boardgames page', async ({ page }) => {
-    await page.goto('https://yanevdimo-boardgames.onrender.com//boardgames');
+    await page.goto('https://localhost:8080/boardgames');
     const list = await page.$('ul');
     expect(list).toBeTruthy();
   });
